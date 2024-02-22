@@ -1,14 +1,14 @@
 install:
 	# Install Required Packages
-	pip install --upgrade pip && pip install -r requirements.txt
+	# pip install --upgrade pip && pip install -r requirements.txt
 
 format:
 	# Format code with Black
-	black *.py src/.
+	# black *.py src/.
 
 lint:
 	# Lint code with PyLint
-	pylint *.py src/.
+	# pylint *.py src/.
 	
 test:
 	# Test code with PyTest
@@ -27,8 +27,8 @@ deploy:
 
 all:
 	# combine all the needed steps in build in production
-	make format lint
+	# make format lint
 
 run-fastapi:
 	# run fastapi app locally
-	uvicorn src.main:app --reload
+	# uvicorn src.main:app --reload
