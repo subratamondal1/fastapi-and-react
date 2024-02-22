@@ -1,7 +1,7 @@
 # Backend #
 install-backend:
 	# Install Required Packages
-	pip install --upgrade pip && pip install -r requirements.txt
+	pip install --upgrade pip && pip install -r backend/requirements.txt
 
 format-backend:
 	# Format code with Black
