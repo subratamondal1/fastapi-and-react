@@ -12,16 +12,17 @@ jobs:
           python-version: 3.8
 
       - name: Install dependencies
-        run: make install
+        run: make install-backend
 
       - name: Format code
-        run: make format
+        run: make format-backend
 
       - name: Lint with pylint
-        run: make lint
+        run: make lint-backend
 
       - name: Test with pytest
-        run: make test
+        run: make test-backend
 
       - name: Build Container
-        run: make build
+        run: make build-backend
+        

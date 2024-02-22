@@ -7,5 +7,8 @@
 <h1 align="center">Fastapi + React</h1>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,tailwind,nodejs,vite,html,css,docker,aws,mysql,git,github&perline=6" />
+<img src="https://github.com/subratamondal1/fastapi-and-react/actions/workflows/backend.yml/badge.svg" />
+</p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,js,tailwind,nodejs,vite,html,css,docker,aws,sqlite,git,github&perline=6" />
 </p>
