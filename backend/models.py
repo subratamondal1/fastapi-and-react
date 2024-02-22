@@ -1,4 +1,4 @@
-"""Database Models"""
+"""Database Models: Represent the structure of 'data' in your database (e.g., users, posts, comments)"""
 
 import datetime as _dt
 

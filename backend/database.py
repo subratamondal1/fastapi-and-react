@@ -1,4 +1,4 @@
-"""SQL Database setup with SQLAlchemy"""
+"""SQL Database setup with SQLAlchemy: DB Stores data persistently"""
 
 import sqlalchemy as _sql
 import sqlalchemy.ext.declarative as _declarative
