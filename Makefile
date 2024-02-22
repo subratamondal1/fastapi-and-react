@@ -5,11 +5,11 @@ install-backend:
 
 format-backend:
 	# Format code with Black
-	black *.py backend/.
+	black backend/.
 
 lint-backend:
 	# Lint code with PyLint
-	pylint *.py backend/.
+	pylint --disable=R0903 backend/.
 	
 test-backend:
 	# Test code with PyTest
