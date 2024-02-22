@@ -1,0 +1,38 @@
+name: React Frontend
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build production artifacts
+        run: npm run build
+
+      - name: Deploy to your hosting platform
+        uses: actions/checkout@v2
+        # Replace with your specific deployment action and configuration
+        # Examples:
+        # - name: Deploy to Netlify
+        #   uses: netlify/actions/build@v1
+        #   with:
+        #     publish: true
+        # - name: Deploy to Vercel
+        #   uses: vercel/actions@v1
+        #   with:
+        #     token: ${{ secrets.VERCEL_TOKEN }}
+
+      - name: Upload artifacts to CDN (optional)
+        uses: actions/upload-artifact@v2
+        with:
+          name: frontend-build
+          path: build/ # Assuming your build output is in 'build' folder
+
