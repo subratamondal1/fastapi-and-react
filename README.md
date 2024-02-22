@@ -6,3 +6,10 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,js,fastapi,react,tailwind,nodejs,vite,html,css,docker,aws,sqlite,git,github&perline=7" />
 </p>
+
+## Create Database
+To create the database `.db` file, run the `services.py` module.
+
+```bash
+python3 services.py
+```

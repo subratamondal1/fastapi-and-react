@@ -10,7 +10,10 @@ format-backend:
 lint-backend:
 	# Lint code with PyLint
 	pylint --disable=R0903 backend/.
-	
+
+create-database-backend:
+	# Create the .db file
+	python3 backend/services.py
 test-backend:
 	# Test code with PyTest
 	# python -m pytest --cov=mylib testfile.py
