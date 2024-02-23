@@ -33,6 +33,10 @@ all-backend:
 	# combine all the needed steps in build in production
 	# make format lint
 
+run-backend:
+	# run fastapi app
+	python3 backend/main.py
+
 # FRONTEND #
 install-frontend:
 	# Install Required Packages

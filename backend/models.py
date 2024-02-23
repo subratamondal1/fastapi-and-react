@@ -1,4 +1,4 @@
-"""Database Models: Represent the structure of 'data' 
+"""Database Models (SQL Table): Represent the structure of 'data' 
 in your database (e.g., users, posts, comments)"""
 
 import datetime as _dt
@@ -7,7 +7,7 @@ import sqlalchemy as _sql
 import sqlalchemy.orm as _orm
 import passlib.hash as _hash
 
-import backend.database as _database
+import database as _database
 
 
 class User(_database.Base):

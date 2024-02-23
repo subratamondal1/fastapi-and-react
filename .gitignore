@@ -161,3 +161,4 @@ cython_debug/
 
 # Macbook Specific
 .DS_Store
+.vscode
