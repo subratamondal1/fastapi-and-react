@@ -1,7 +1,8 @@
+import LoginSignup from "./components/LoginSignup/LoginSignup";
 function App() {
   return (
     <>
-      <h1>Hello React!</h1>
+      <LoginSignup></LoginSignup>
     </>
   );
 }
