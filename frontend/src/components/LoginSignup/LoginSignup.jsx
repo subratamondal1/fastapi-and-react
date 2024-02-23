@@ -4,17 +4,19 @@ function LoginSignup() {
   const [action, setAction] = useState("Sign Up");
   const loginMsg = "Welcome back";
   const signupMsg = "Create account";
+  const inputBar =
+    "p-4 my-2 rounded-full bg-blue-100 hover:shadow-md font-bold focus:outline-blue-500 focus:ring-2 focus:ring-blue-500";
   const displayFullName = (
-    <div className="flex justify-between">
+    <div className="flex flex-col">
       <input
         type="text"
         placeholder="first name"
-        className="p-4 my-2 rounded-full bg-blue-100 font-bold hover:shadow-md"
+        className={inputBar}
       />
       <input
         type="text"
         placeholder="last name"
-        className="p-4 my-2 rounded-full bg-blue-100 font-bold hover:shadow-md"
+        className={inputBar}
       />
     </div>
   );
@@ -55,12 +57,12 @@ function LoginSignup() {
             <input
               type="text"
               placeholder="email"
-              className="p-4 my-2 rounded-full bg-blue-100 hover:shadow-md font-bold"
+              className={inputBar}
             />
             <input
               type="text"
               placeholder="password"
-              className="p-4 my-2 rounded-full bg-blue-100 hover:shadow-md font-bold"
+              className={inputBar}
             />
             {action === "Log In" && loginInfo}
             {action === "Sign Up" && signupInfo}

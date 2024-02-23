@@ -1,8 +1,9 @@
-import LoginSignup from "./components/LoginSignup/LoginSignup";
+// import LoginSignup from "./components/LoginSignup/LoginSignup";
+import HomePage from "./components/pages/HomePage";
 function App() {
   return (
     <>
-      <LoginSignup></LoginSignup>
+      <HomePage></HomePage>
     </>
   );
 }
