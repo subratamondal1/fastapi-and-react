@@ -30,7 +30,7 @@ class Lead(_database.BASE):
     email = _sql.Column(_sql.String, index=True)
     company = _sql.Column(_sql.String, index=True, default="")
     note = _sql.Column(_sql.String, default="")
-    date_created = _sql.Column(_sql.DateTime, default=_sql.datetime.utcnow)
-    date_last_updated= _sql.Column(_sql.DateTime, default=_sql.datetime.utcnow)
+    date_created = _sql.Column(_sql.DateTime, default=_dt.datetime.utcnow)
+    date_last_updated= _sql.Column(_sql.DateTime, default=_dt.datetime.utcnow)
 
     owner = _orm.relationship("User", back_populates="leads")
